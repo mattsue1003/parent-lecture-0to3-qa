@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0–3 歲講座 QA 準備手冊</title>
+<meta name="description" content="雲門教室 0–3 歲發展關鍵期線上講座：依 183 位報名家長樣貌與 74 則提問整理的預測問題、回覆要點、研究佐證、法規與資源。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ec; --paper:#fffdf9; --ink:#2b2a28; --muted:#6b6660; --line:#e6ded2;
+  --teal:#028090; --teal-soft:#dff1f2; --orange:#e8552d; --amber:#f4a93c; --amber-soft:#fdf1dc;
+  --sage:#5e8c6a; --sage-soft:#e6f0e8; --rose:#b85c6a; --rose-soft:#f7e6e8; --blue:#4a6fa5; --blue-soft:#e4ebf5;
+  --radius:14px; --shadow:0 2px 10px rgba(60,40,10,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.75;font-size:16px}
+a{color:var(--teal)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header.hero{background:linear-gradient(160deg,#fff8ea 0%,#f3efe6 60%,#e8f1f0 100%);border-bottom:1px solid var(--line);padding:40px 0 28px}
+.kicker{display:inline-block;background:var(--teal);color:#fff;font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;letter-spacing:.08em}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.25;margin:14px 0 8px;font-weight:900}
+.sub{color:var(--muted);font-size:17px;margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;font-size:14px}
+.meta span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+nav.toc{position:sticky;top:0;z-index:20;background:rgba(247,243,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;scrollbar-width:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid transparent}
+nav.toc a:hover{background:var(--paper);border-color:var(--line)}
+section{padding:40px 0 10px}
+h2{font-size:clamp(22px,4vw,30px);margin:0 0 6px;font-weight:900}
+h2 small{display:block;font-size:15px;color:var(--muted);font-weight:400;margin-top:4px}
+h3{font-size:19px;margin:28px 0 10px;font-weight:700}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);margin:14px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.stat b{display:block;font-size:34px;line-height:1.1;color:var(--teal);font-weight:900}
+.stat span{color:var(--muted);font-size:14px}
+.bars{margin:8px 0 0}
+.bar{display:grid;grid-template-columns:150px 1fr 60px;align-items:center;gap:10px;font-size:14px;margin:7px 0}
+.bar i{display:block;height:12px;border-radius:6px;background:var(--teal);opacity:.85}
+.bar em{font-style:normal;color:var(--muted);text-align:right}
+.bar.o i{background:var(--amber)}
+.bar.s i{background:var(--sage)}
+.note{background:var(--amber-soft);border-left:4px solid var(--amber);padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0;font-size:15px}
+.note.t{background:var(--teal-soft);border-color:var(--teal)}
+.note.r{background:var(--rose-soft);border-color:var(--rose)}
+.quick li{margin:8px 0}
+.quick b{color:var(--teal)}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.timeline li:last-child{border-bottom:0}
+.timeline time{font-weight:700;color:var(--teal)}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;margin-right:6px;vertical-align:middle}
+.tag.e{background:var(--rose-soft);color:var(--rose)}
+.tag.r{background:var(--amber-soft);color:#9a5d00}
+.tag.p{background:var(--sage-soft);color:var(--sage)}
+.tag.d{background:var(--blue-soft);color:var(--blue)}
+.tag.f{background:#efe9f6;color:#6b4e9b}
+.tag.s{background:#e9eef7;color:#3f5a8a}
+.tag.a{background:var(--teal-soft);color:var(--teal)}
+.tag.h{background:#f3eadb;color:#7a5a1e}
+.tag.age{background:#eee;color:#555;font-weight:500}
+details.q{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin:12px 0;box-shadow:var(--shadow);overflow:hidden}
+details.q summary{cursor:pointer;padding:16px 20px;font-weight:700;font-size:17px;list-style:none;display:flex;gap:12px;align-items:flex-start}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary .n{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--teal);color:#fff;font-size:14px;display:grid;place-items:center;font-weight:900}
+details.q summary .t{flex:1}
+details.q summary .t small{display:block;font-weight:400;color:var(--muted);font-size:13px;margin-top:3px}
+details.q summary .chev{flex:0 0 auto;color:var(--muted);transition:transform .2s}
+details.q[open] summary .chev{transform:rotate(180deg)}
+details.q .body{padding:0 20px 20px;border-top:1px solid var(--line)}
+.block{margin:16px 0}
+.block h4{margin:0 0 6px;font-size:15px;letter-spacing:.04em;color:var(--muted);font-weight:700;text-transform:uppercase}
+.block h4::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--teal);margin-right:8px;vertical-align:2px}
+.block.say h4::before{background:var(--orange)}
+.block.do h4::before{background:var(--sage)}
+.block.ev h4::before{background:var(--blue)}
+.block.law h4::before{background:var(--amber)}
+.block.me h4::before{background:var(--rose)}
+.say p{font-size:17px;background:#fff6ef;border:1px dashed #f0c7b3;padding:12px 16px;border-radius:10px;margin:0}
+.do ol,.do ul{margin:4px 0 0;padding-left:22px}
+.do li{margin:5px 0}
+.ev ul,.law ul{margin:4px 0 0;padding-left:22px;font-size:15px}
+.ev li,.law li{margin:5px 0}
+.me p{margin:0;font-size:15px;color:#6e3b44;background:var(--rose-soft);padding:10px 14px;border-radius:10px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.filters button{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer;color:var(--ink)}
+.filters button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.search{width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:16px;background:var(--paper)}
+.raw{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0;font-size:15px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start}
+.raw .q{white-space:pre-wrap}
+.raw .to{font-size:13px;color:var(--muted);text-align:right;min-width:120px}
+.raw .to a{text-decoration:none;font-weight:700}
+.count{color:var(--muted);font-size:14px;margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--paper);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f3eee5;font-weight:700}
+tr:last-child td{border-bottom:0}
+footer{padding:40px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:40px}
+.formula{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+.formula div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px}
+.formula b{display:block;color:var(--teal);font-size:15px;margin-bottom:4px}
+.formula span{font-size:14px;color:var(--muted)}
+@media (max-width:600px){
+  .bar{grid-template-columns:110px 1fr 50px;font-size:13px}
+  .timeline li{grid-template-columns:1fr}
+  .raw{grid-template-columns:1fr}.raw .to{text-align:left}
+  details.q summary{font-size:16px;padding:14px 16px}
+  details.q .body{padding:0 16px 16px}
+}
+@media print{
+  nav.toc,.filters,.search{display:none}
+  details.q{break-inside:avoid}
+  details.q .body{display:block}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">講師 QA 準備手冊</span>
+    <h1>0–3 歲發展關鍵期 線上講座<br>預測提問與回覆要點</h1>
+    <p class="sub">雲門教室 × 鍾孟修 職能治療師｜依 183 位報名家長樣貌與 74 則「想請講師解惑的困擾」整理</p>
+    <div class="meta">
+      <span>2026/11/11（三）13:00–14:00 線上</span>
+      <span>12:40 抵達南門館舊館蝌蚪教室</span>
+      <span>13:45–14:00 QA 由安安老師主持提問</span>
+      <span>資料：主持流程腳本 v0.1、報名家長樣貌分析簡報</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#quick">講前速讀</a>
+  <a href="#who">家長樣貌</a>
+  <a href="#flow">流程與開場</a>
+  <a href="#top">最可能被問的 12 題</a>
+  <a href="#themes">分主題回覆</a>
+  <a href="#raw">74 則原始提問</a>
+  <a href="#law">法規與資源</a>
+  <a href="#refs">研究清單</a>
+</div></nav>
+
+<main class="wrap">
+
+<!-- ========== 講前速讀 ========== -->
+<section id="quick">
+  <h2>講前 3 分鐘速讀<small>進教室前看這一段就夠：這群家長是誰、他們最想聽什麼、回答用什麼骨架。</small></h2>
+  <div class="card">
+    <ul class="quick">
+      <li><b>八成以上是 3 歲以下孩子的家長</b>，1 到 2 歲最多。開場舉例請以「1 歲半左右、剛會走、還不太會講話」的孩子為主角，所有年齡層都聽得進去。</li>
+      <li><b>84% 勾選「情緒發展與情緒調節」</b>，72 位寫下困擾的家長裡有 46% 在問崩潰、尖叫、躺地。QA 幾乎一定會從「孩子情緒來了當下怎麼辦」開始。</li>
+      <li><b>第二大塊是「規矩怎麼立、怎麼轉移」(31%)</b>，特別是 2 歲組：說不行就故意做、很堅持、不肯離開。</li>
+      <li><b>家長自己很累</b>：10 位直接寫「體力心力耗盡」「一整天在趕」「我自己情緒也不好」。回答時先接住大人，再談孩子，會比直接給技巧更有效。</li>
+      <li><b>有幾題是地雷題</b>：「到底可不可以打」、「托兒所老師說不要一直抱」、「孩子失控是不是我情緒管理的問題」。本頁有準備好的措辭（見第 9、第 25、第 34 題）。</li>
+      <li><b>發展篩檢是今年可以帶的新資源</b>：113 年 7 月起未滿 7 歲兒童有 6 次政府補助的發展篩檢，國健署調查過半家長不知道。任何「我的孩子正常嗎」都能接到這裡。</li>
+      <li><b>講座主辦是雲門教室</b>，結尾會導向親子律動與禮物包。回答時自然帶到「動作 × 情緒 × 依附」的連結，就跟主軸一致，不必硬推課程。</li>
+    </ul>
+  </div>
+
+  <h3>萬用回答骨架（15 分鐘 QA 每題約 2 分鐘，照這四步走）</h3>
+  <div class="formula">
+    <div><b>1. 先接住大人</b><span>「這題很多家長都寫了，你不是唯一一個。」一句就好，讓提問者先被看見。</span></div>
+    <div><b>2. 說出孩子在發展什麼</b><span>把行為翻譯成發展任務：尖叫是語言還沒跟上、堅持是自主感萌芽、躺地是腦還沒長好剎車。</span></div>
+    <div><b>3. 給一個今晚就能做的動作</b><span>只給一招，要具體到「蹲下來、少講話、手放在他背上」這種程度。</span></div>
+    <div><b>4. 說清楚什麼時候要找專業</b><span>一句警訊 + 一個管道（兒童發展篩檢、聯合評估中心、幼兒專責醫師）。</span></div>
+  </div>
+</section>
+
+<!-- ========== 家長樣貌 ========== -->
+<section id="who">
+  <h2>報名家長樣貌<small>來源：雲門教室「報名家長樣貌分析」簡報（Canva，7 頁）。</small></h2>
+  <div class="grid">
+    <div class="stat"><b>183</b><span>位家長報名</span></div>
+    <div class="stat"><b>83.6%</b><span>孩子未滿 3 歲（153 筆）</span></div>
+    <div class="stat"><b>84.2%</b><span>勾選「情緒發展與情緒調節」</span></div>
+    <div class="stat"><b>72</b><span>位家長寫下具體困擾（74 則）</span></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">孩子年齡分布</h3>
+    <div class="bars">
+      <div class="bar"><span>尚未出生／準爸媽</span><i style="width:3.3%"></i><em>6（3%）</em></div>
+      <div class="bar"><span>0–未滿 1 歲</span><i style="width:28.4%"></i><em>52（28%）</em></div>
+      <div class="bar"><span>1–未滿 2 歲</span><i style="width:31.7%"></i><em>58（32%）</em></div>
+      <div class="bar"><span>2–未滿 3 歲</span><i style="width:23.5%"></i><em>43（24%）</em></div>
+      <div class="bar"><span>3 歲以上</span><i style="width:13.1%"></i><em>24（13%）</em></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">最想了解的教養主題（可複選）</h3>
+    <div class="bars">
+      <div class="bar o"><span>情緒發展與情緒調節</span><i style="width:84.2%"></i><em>84%</em></div>
+      <div class="bar o"><span>如何陪孩子玩／適齡活動</span><i style="width:69.9%"></i><em>70%</em></div>
+      <div class="bar o"><span>專注力與學習能力</span><i style="width:66.7%"></i><em>67%</em></div>
+      <div class="bar o"><span>自信心與自尊心建立</span><i style="width:55.2%"></i><em>55%</em></div>
+      <div class="bar o"><span>動作與身體發展</span><i style="width:53.6%"></i><em>54%</em></div>
+      <div class="bar o"><span>親子依附與安全感</span><i style="width:51.4%"></i><em>51%</em></div>
+      <div class="bar o"><span>人際互動與社會能力</span><i style="width:47.5%"></i><em>48%</em></div>
+      <div class="bar o"><span>語言與認知發展</span><i style="width:39.9%"></i><em>40%</em></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">72 位家長寫下的困擾，主辦分類</h3>
+    <div class="bars">
+      <div class="bar s"><span>情緒表達與安撫</span><i style="width:45.8%"></i><em>33（46%）</em></div>
+      <div class="bar s"><span>規範建立與轉移注意力</span><i style="width:30.6%"></i><em>22（31%）</em></div>
+      <div class="bar s"><span>探索遊戲與學習能力</span><i style="width:19.4%"></i><em>14（19%）</em></div>
+      <div class="bar s"><span>發展觀察與語言溝通</span><i style="width:19.4%"></i><em>14（19%）</em></div>
+      <div class="bar s"><span>家長負荷與教養協調</span><i style="width:13.9%"></i><em>10（14%）</em></div>
+      <div class="bar s"><span>睡眠與日常作息</span><i style="width:12.5%"></i><em>9（13%）</em></div>
+      <div class="bar s"><span>依附安全感與分離</span><i style="width:8.3%"></i><em>6（8%）</em></div>
+      <div class="bar s"><span>手足與同儕互動</span><i style="width:5.6%"></i><em>4（6%）</em></div>
+    </div>
+    <p class="count">一則困擾可能跨多類，百分比相加超過 100%。</p>
+  </div>
+
+  <div class="note t"><b>各年齡層家長在問什麼</b><br>
+    0–1 歲（12 則）：安全感、看懂寶寶訊號、發展是否正常、怎麼陪玩不過度刺激。<br>
+    1–2 歲（26 則）：哭鬧安撫、堅持與界線、還不開口說話。<br>
+    2–3 歲（24 則）：立規矩、尖叫、轉移注意力、晚睡不睡。<br>
+    3 歲以上（12 則）：挫折忍受、不敢嘗試、拖延、生活配合。<br>
+    準爸媽（6 位）：沒有提問，可在開場一句話歡迎他們「先存起來」。
+  </div>
+</section>
+
+<!-- ========== 流程 ========== -->
+<section id="flow">
+  <h2>流程與開場確認<small>來源：主持流程腳本 v0.1「for 講師」分頁。</small></h2>
+  <div class="card">
+    <ul class="timeline">
+      <li><time>12:40</time><div>抵達南門館舊館蝌蚪教室。Nona 測畫面與麥克風；麻糬會說明結尾互動並借麥克風放音樂。</div></li>
+      <li><time>13:00–13:05</time><div>安安老師開場，介紹講師（下方文字）。</div></li>
+      <li><time>13:05–13:45</time><div>主題分享，聊天對談形式，三大方向：① 0–3 歲在發展哪些能力（動作 × 大腦、情緒處理、與日後專注力／自尊／同儕的關聯）② 為什麼每個孩子不一樣（依附與陪伴品質、男女差異、睡眠與公共場合哭鬧）③ 怎麼建立好的依附與有品質的陪伴（不只是時間、從照顧者變引導者、接觸不同引導者與團體、自身帶孩子上親子律動的經驗）。</div></li>
+      <li><time>13:45–14:00</time><div>QA。麻糬在講座中把「問與答」區問題依主題分類，安安老師依「重複度高／與主題直接相關／多數家長受益」順序提問。</div></li>
+      <li><time>13:58–14:00</time><div>結尾由安安老師介紹禮物兌換券（身體學習禮物包：親親寶貝身體小冊、律動小書、動動蠟筆、七巧板貼紙）與官方 LINE。</div></li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <b>主辦要你確認的兩件事</b><br>
+    1. 12:40 抵達是否 OK。<br>
+    2. 講師介紹文字：「孟修老師是愛迪樂居家職能治療所所長，本身是職能治療師，有許多協助學齡前孩子的經驗；同時他也是雲門教室的家長，兩個孩子都是從 3 歲開始一起在雲門教室上親子律動課。」<br>
+    若要微調，可考慮補一句「也長期在社區帶長輩與家庭的健康課程」，讓家長知道你習慣用生活化語言講發展。
+  </div>
+
+  <h3>對談段落可以預埋的三個「鉤子」</h3>
+  <div class="card">
+    <ol>
+      <li><b>動作 × 大腦：</b>「學走路的孩子一小時走 2,300 多步、跌 17 次，還是繼續走。」這一句同時講了動作量、挫折忍受與大人不必每次都扶。後面 QA 的「跌倒撞頭」「不敢嘗試」都能接回來。</li>
+      <li><b>情緒：</b>先示範「手掌腦」（四指蓋住拇指是上層腦管住情緒腦；孩子崩潰時是掀開蓋子）。QA 時講「等蓋子蓋回來再講道理」，家長馬上有畫面。</li>
+      <li><b>依附：</b>「研究者看親子互動錄影，狀態對得上的時間只有三成左右，重點不是不出錯，是修復。」這句可以化解很多媽媽「是不是我情緒不好害的」的自責。</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========== TOP 12 ========== -->
+<section id="top">
+  <h2>最可能被問的 12 題<small>依提問重複度、勾選主題比例、以及講座主軸相關度排序。每題都附 30 秒版與完整版。</small></h2>
+
+  <details class="q" id="q1" open>
+    <summary><span class="n">1</span><span class="t">孩子一不如意就尖叫、躺地大哭，當下到底要怎麼讓他冷靜？<small>原始提問 11 則以上（1–3 歲）。84% 家長勾選情緒主題。幾乎必問。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>崩潰的那三分鐘，孩子的腦是「蓋子掀開」的狀態，聽不進道理。當下只做三件事：確保安全、把自己的音量和字數降到最低、留在他旁邊。等他的呼吸慢下來、眼睛開始看你，再用一句話幫他說出感受。崩潰不是教養失敗，是 1 到 3 歲的常態；多數崩潰 5 分鐘內會自己結束。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>安全：</b>躺地就讓他躺，只移開會撞到的東西。不要抱起來硬帶走，除非在馬路邊。</li>
+        <li><b>降音量、減字數：</b>蹲到比他低，講話比平常慢一半、小聲一半。只說「我在這裡」或什麼都不說。不要問問題（「你到底要什麼？」會拉長崩潰）。</li>
+        <li><b>身體在、嘴巴停：</b>手輕放在他背上或旁邊坐著。想抱就伸手，被推開就收回，過 30 秒再試。</li>
+        <li><b>等轉折：</b>哭聲從尖銳變成嗚咽、開始找你、呼吸變長，這是「氣」轉成「難過」的訊號，這時候才可以抱、可以講。</li>
+        <li><b>命名 + 一句話界線：</b>「你好想要那個，沒拿到很生氣。」停一下。「我們等一下回家吃點心。」不講第三句。</li>
+        <li><b>事後不翻舊帳：</b>情緒教學在平常心情好的時候做（看繪本、玩扮演），不是在崩潰現場。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證（可口頭引用）</h4><ul>
+        <li>Potegal 等人（2003）記錄 335 位 18–60 個月孩子的發脾氣：中位數約 3 分鐘，四分之三在 5 分鐘內結束；年紀越大時間略長。</li>
+        <li>Green、Potegal 與 Kaufman（2011）分析發脾氣的聲音結構：前段是「氣」（尖叫、丟東西），後段轉成「難過」（哭、找安慰）。在「氣」的階段跟孩子講話或問問題會延長發脾氣，等轉成「難過」再介入最有效。</li>
+        <li>Lieberman 等人（2007）：把感受說出來（affect labeling）會降低杏仁核活性。這是 Siegel 與 Bryson「命名以馴服」（name it to tame it）的神經學基礎。</li>
+        <li>Rosanbalm 與 Murray（2017，美國 OPRE 報告）：0–3 歲的情緒調節幾乎完全依賴大人的「共同調節」（co-regulation），大人先穩，孩子才可能穩。</li>
+      </ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>可以講自己孩子在親子律動課上崩潰的一次（如果有）：老師怎麼處理、你當下的尷尬、以及孩子幾分鐘後怎麼回到團體。家長最想聽的是「專家的孩子也會這樣」。</p></div>
+    </div>
+  </details>
+
+  <details class="q" id="q2">
+    <summary><span class="n">2</span><span class="t">孩子很堅持、不肯離開、說不行還故意做，2 歲怎麼溫和但有效地立規矩？<small>原始提問 10 則以上，集中在 1–3 歲。規範建立類佔 31%。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>2 歲的「故意」多半不是挑釁，是他剛發現「我可以決定」這件事，而且他的剎車（抑制控制）要到 3、4 歲才慢慢長好。規矩要少、要一致、要講「可以做什麼」而不是「不要做什麼」。選擇權給在小地方，底線守在少數幾件事。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>規矩只留 3 到 5 條：</b>安全、不傷人、不傷物。其他的放過，不然大人會整天在說不行。</li>
+        <li><b>把「不要」翻成「要」：</b>「不要跑」→「走路，手牽我」；「不要丟」→「球可以丟，杯子放桌上」。1–2 歲孩子聽到句子常只抓到動詞。</li>
+        <li><b>先預告再轉換：</b>離開公園前「再溜 3 次我們就走」，用手指比；然後真的數、真的走。</li>
+        <li><b>二選一：</b>「你要自己走還是我抱？」「先穿鞋還是先穿外套？」選項都是你可以接受的。</li>
+        <li><b>身體跟上嘴巴：</b>說「不行」的同時人就走過去，把手放在他手上或把東西移開。只用嘴巴說不行的「不行」，對 2 歲孩子沒有重量。</li>
+        <li><b>做到了就講出來：</b>「你剛剛自己把鞋放好了。」描述行為，不用「好棒」。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Diamond（2013，Annual Review of Psychology）：執行功能三核心（工作記憶、抑制控制、認知彈性）在 3–5 歲快速發展，2 歲孩子「知道不行卻還是做」是抑制控制未成熟，不是不聽話。</li>
+        <li>Baumrind 的教養類型研究（1966 起）與後續大量追蹤：高回應 + 高要求的「權威型」（不是專制型）教養，與孩子日後的自我控制、社會能力、學業表現關聯最穩定。</li>
+        <li>Moffitt 等人（2011，PNAS，Dunedin 千人追蹤）：童年自我控制預測 32 歲時的健康、財務與犯罪紀錄，而且自我控制是可以被教的。</li>
+        <li>Gunderson 等人（2013）：1–3 歲時父母用「描述過程」的稱讚（你很努力、你自己想到方法），預測孩子 7–8 歲時更相信能力可以成長。</li>
+      </ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>職能治療的「剛剛好的挑戰」（just-right challenge）：規矩也一樣，要求要在孩子能力邊緣一點點，不是大人覺得應該的位置。</p></div>
+    </div>
+  </details>
+
+  <details class="q" id="q3">
+    <summary><span class="n">3</span><span class="t">在外面（買飲料、公園、只有我一個人帶）崩潰，沒辦法把他帶離現場，當下還能怎麼辦？<small>原始提問 3 則，但情境太真實，會引發共鳴。腳本第②段也點名「公共場合哭鬧」。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>公共場合最難的不是孩子，是旁人的眼光讓大人想「快點止住」。先在心裡跟自己說「旁人只看 10 秒，我的孩子要跟我一輩子」。然後把目標從「止哭」改成「陪他過這三分鐘」：蹲下、擋住部分視線、少講話、等。這比任何技巧都有效。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>先顧自己：</b>深呼吸兩次，肩膀放下。孩子會同步你的生理狀態。</li>
+        <li><b>縮小舞台：</b>側身用身體擋住路人視線，或推車轉個方向。孩子觀眾少，崩潰也會短。</li>
+        <li><b>不談判、不解釋：</b>「不買」只講一次。之後只講「我知道你很想要」。重複講理由等於重新開啟談判。</li>
+        <li><b>腳踏車／推車走不開：</b>就原地坐下，把腳踏車放倒在旁邊。你不需要離開現場，只需要停止互動的「拉扯」。</li>
+        <li><b>給旁人一句話：</b>「他在學習等待，謝謝。」說給旁人聽，也是說給自己聽。</li>
+        <li><b>事前預防：</b>進店前先說好「今天買一樣東西，你來選」；累和餓的時段不排購物。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Waters、West 與 Mendes（2014，Psychological Science）：媽媽經歷壓力後抱起嬰兒，嬰兒的心跳在幾分鐘內跟著上升。大人的緊張會「傳染」，所以先穩住自己不是口號。</li>
+        <li>Potegal 等人（2003）：多數發脾氣 5 分鐘內結束。家長知道「有時限」，就比較能等。</li>
+        <li>Faber 與 Mazlish《怎麼說，孩子會聽》的核心做法「接納感受 + 簡短界線 + 替代方案」在多項親職方案（如 Incredible Years、Triple P）的隨機試驗中，是降低幼兒行為問題最一致有效的元素。</li>
+      </ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q4">
+    <summary><span class="n">4</span><span class="t">孩子一直用尖叫表達，聲音都沙啞了，大人也快受不了，怎麼辦？<small>原始提問 4 則（1–3 歲），其中一則媽媽寫到自己耳朵痛、心理煩躁，有情緒負荷。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>1 到 2 歲半的尖叫，大多是「我有話要說但字還沒到」。他能發出的最大音量就是尖叫，而且尖叫馬上有效，所以會一直用。做法是給他另一個一樣有效的工具：簡單手勢、單字、指圖卡，並且在他用新工具時比尖叫更快回應。媽媽受不了是真實的，可以戴一邊耳塞再蹲下來，這不是傷害孩子，是讓自己撐得住。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>尖叫時不給「大反應」：</b>臉平靜、走過去、用氣音說「你要什麼，用手指給我看」。大人越激動，尖叫越有趣。</li>
+        <li><b>教 3 個替代訊號：</b>「要」（手拍胸口）、「還要」（兩手指尖碰）、「不要」（搖手）。每次他用了，立刻給、立刻說「你跟我說『要』，好，給你」。</li>
+        <li><b>玩音量遊戲：</b>心情好的時候玩「大聲／小聲／氣音」輪流喊，或用手上下比高低。讓他知道自己的聲音有刻度。</li>
+        <li><b>找出尖叫的高峰時段：</b>通常是累、餓、無聊、或需要大人注意而大人在滑手機的時候。提前 10 分鐘介入。</li>
+        <li><b>大人保護自己：</b>一邊耳塞或降噪耳機留一耳，然後還是蹲下來抱。告訴孩子「媽媽耳朵痛，我戴這個，我還是在」。</li>
+        <li><b>沙啞超過兩週、或伴隨呼吸聲粗、喝水嗆咳：</b>看兒科或耳鼻喉科，排除聲帶結節或其他問題。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Tremblay 等人（2004，Pediatrics）追蹤加拿大 500 多名嬰幼兒：打人、咬人、尖叫等「身體攻擊」在 17 個月已普遍出現，2 到 3 歲最頻繁，之後隨語言與自我控制成熟而下降。孩子不是變壞，是語言還沒追上情緒。</li>
+        <li>嬰幼兒手勢（baby signs）的研究（Goodwyn、Acredolo 與 Brown，2000）：教手勢不會延後口語，反而與較好的語言發展相關，並減少溝通挫折。</li>
+        <li>Romeo 等人（2018）：親子「一來一往的對話回合數」比聽到的字數更能預測語言區活化。回應孩子的訊號，比一直對他說話重要。</li>
+      </ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q5">
+    <summary><span class="n">5</span><span class="t">我的孩子發展正常嗎？1 歲 7 個月聽得懂指令但不開口、走路踮腳尖，什麼時候要去評估？<small>原始提問 6 則。「語言與認知發展」勾選 40%，「動作與身體發展」54%。你是職能治療師，一定會被問。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>先講好消息：1 歲 7 個月聽得懂、會照做，代表理解（接收性語言）是好的，這是最重要的基礎；只是表達晚一點的孩子，一半以上到 3 歲會自己追上。踮腳走在剛學走的一、兩年很常見，多數會自己消失。但「觀察」不等於「等」：今年起政府有 6 次免費的兒童發展篩檢，帶著兒童健康手冊到合作的兒科就可以做，有疑慮就轉聯合評估中心。早篩不是貼標籤，是讓你安心。</p></div>
+      <div class="block do"><h4>可以帶的判斷線</h4><ol>
+        <li><b>語言警訊（需要評估）：</b>12 個月沒有牙牙學語或手勢（指、揮手）；16 個月沒有任何有意義的字；24 個月沒有兩個字的組合；任何年齡出現原本會的能力消失；或聽不懂簡單指令、叫名字少回頭。</li>
+        <li><b>1y7m 聽得懂不開口，在家怎麼做：</b>①等 5 秒，不替他說；②給選擇讓他必須回應（「要蘋果還是香蕉？」同時拿出來）；③把他發的音擴充成字（他說「ㄅ」，你說「球，紅色的球」）；④不要考他（「這是什麼？說說看」會讓他閉嘴）；⑤每天讀同一本簡單繪本，留空讓他接最後一個字。</li>
+        <li><b>踮腳走警訊：</b>只有一邊踮、小腿很緊腳跟放不下來、2 歲半到 3 歲後還是大部分時間踮、合併語言或社交遲緩、或曾經不踮後來才開始踮。符合任一項就去評估；否則多赤腳走不同地面、蹲站、踩斜坡。</li>
+        <li><b>管道：</b>兒童健康手冊內頁家長檢核表 → 兒科做「兒童發展篩檢」 → 有疑慮轉「兒童發展聯合評估中心」（各縣市至少一家，2023 年全國 75 家）或縣市「發展遲緩兒童通報轉介中心」。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Rescorla（2011 回顧）：2 歲時字彙明顯落後的「晚說話者」約佔 10–20%，其中多數到學齡前追上，但追上的孩子語言分數平均仍略低於同儕，所以追蹤仍有價值。</li>
+        <li>Engström 與 Tedroff（2012，Pediatrics）：瑞典 5 歲半兒童約 5% 曾經或正在踮腳走，其中多數在無治療下自然改善；但有神經發展問題的孩子踮腳比例明顯較高。</li>
+        <li>美國兒科醫學會（AAP）建議在 9、18、30 個月做標準化發展篩檢，因為單靠醫師臨床印象會漏掉約一半有發展問題的孩子（Sices 等人，2003）。這也是台灣 2024 年導入 6 次篩檢的背景。</li>
+      </ul></div>
+      <div class="block law"><h4>法規與資源</h4><ul>
+        <li>衛福部國健署：113 年 7 月 1 日起，具健保身分未滿 7 歲兒童可接受 6 次政府補助的兒童發展篩檢（6–10 個月、10 個月–1 歲半、1 歲半–2 歲、2–3 歲、3–5 歲、5–7 歲各一次），可與 7 次兒童預防保健同時做。院所可在「兒童醫療健康資訊整合平台 → 兒童就醫地圖」查。</li>
+        <li>國健署 114 年初調查：過半家長不知道有這項服務。在講座說出來本身就是幫忙。</li>
+        <li>兒童發展聯合評估中心：各縣市皆有，由醫師、職能、物理、語言、心理、社工團隊一次評估，多數需預約，等候 1–3 個月不等，所以有疑慮就早點掛。</li>
+        <li>幼兒專責醫師制度：0–3 歲可在合作兒科登錄一位固定醫師，有發展疑問時有人可問。</li>
+      </ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>可以講一個早療現場的例子：家長拖了半年才來，與另一個 1 歲半就來、半年後結案的對比。重點放在「早來的多半是來確認沒事」。</p></div>
+    </div>
+  </details>
+
+  <details class="q" id="q6">
+    <summary><span class="n">6</span><span class="t">孩子晚上精神很好不睡、拖到 11 點，白天又不肯午睡，怎麼讓他早點睡？<small>原始提問 7 則，跨 1–3 歲。睡眠類 13%，而且是大人最累的來源。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>台灣幼兒普遍比歐美晚睡 1 到 2 小時，這是跨國研究裡就看得到的，所以你不是一個人。1 到 2 歲一天要睡 11 到 14 小時、3 到 4 歲 10 到 13 小時（含午睡）。晚上跳不停常常不是不累，是「過累」反而亢奮。最有效的一招是固定的睡前流程，研究顯示連續做兩三週就看得到差別。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>先算總時數：</b>幾點起、午睡多久、幾點睡著。如果午睡 3 小時到 5 點才醒，晚上 11 點睡是正常結果，問題在午睡太晚、太長。2–3 歲午睡控制在 1 到 1.5 小時、3 點前結束。</li>
+        <li><b>睡前流程固定 4 步、30 分鐘：</b>洗澡 → 刷牙穿睡衣 → 同一本書或同一首歌 → 關燈。順序每天一樣，誰帶都一樣。</li>
+        <li><b>把床時間往前推 15 分鐘，每三天推一次：</b>不要一次從 11 點改到 9 點。</li>
+        <li><b>睡前 1 小時關螢幕、燈調暗、不玩追逐。</b>要放電請在下午 4 到 6 點：公園、爬樓梯、親子律動的動作在這時候做最好。</li>
+        <li><b>不肯午睡但很累：</b>改成「安靜時間」，躺著看書或聽故事 30 分鐘，不強迫睡著。2 歲半到 3 歲開始有孩子要減少午睡，這是正常過渡。</li>
+        <li><b>黏媽媽晚上不睡：</b>先在白天多給「專屬時間」10 分鐘，晚上的分離會比較容易；睡前流程可以由爸爸接手其中一步，讓孩子知道不是只有媽媽能讓他睡。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Mindell 等人（2009，Sleep）：405 位 7–36 個月幼兒隨機試驗，連續三週固定睡前流程，入睡時間縮短、夜醒減少，媽媽的情緒也改善。</li>
+        <li>Mindell 等人（2010，Sleep Medicine）：17 國近 3 萬名 0–3 歲幼兒比較，以亞洲為主的地區（含台灣）平均就寢時間比歐美晚約 1–2 小時，總睡眠較短，家長認為「有睡眠問題」的比例也較高。</li>
+        <li>WHO（2019）5 歲以下 24 小時指引：1–2 歲每天睡 11–14 小時、3–4 歲 10–13 小時（含午睡）、每天至少 180 分鐘身體活動、1 歲以下不看螢幕、2 歲以下不建議螢幕、2–4 歲每天不超過 1 小時。</li>
+        <li>Gradisar 等人（2016，Pediatrics）：對 6–16 個月嬰兒做溫和的行為式睡眠介入（漸進式安撫、延後就寢），12 個月後追蹤，依附安全與情緒行為與對照組沒有差異，壓力荷爾蒙也沒有升高。家長可以放心用溫和但一致的方法。</li>
+      </ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q7">
+    <summary><span class="n">7</span><span class="t">孩子想玩想動，但大人體力心力已經耗盡，怎麼陪？一整天都在趕孩子，怎麼辦？<small>原始提問 10 則談到家長負荷。簡報特別把這類獨立成一頁，主辦也在意。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>高品質陪伴不是陪很久，是每天有一小段「孩子主導、大人全在」的時間，10 分鐘就夠。其他時間，大人可以在旁邊坐著、躺著，讓孩子自己玩，這對發展是好事，不是偷懶。Winnicott 說「夠好的媽媽」就夠了，研究也說親子狀態對得上的時間只有三成左右，重點是出錯後修復。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>每天 10 分鐘「專屬時間」：</b>關手機，孩子選玩什麼，你只做三件事：描述他在做什麼、模仿他、稱讚具體行為。不教、不問、不指揮。這是親子互動治療（PCIT）的核心，效果比零散陪兩小時好。</li>
+        <li><b>躺著也能陪：</b>大人躺地上當山、當隧道、當橋，孩子爬過去爬過來。你在休息，他在練動作計畫與觸覺。</li>
+        <li><b>把家務變遊戲：</b>晾衣服給他遞夾子、洗菜給他一盆水、掃地給他小掃把。1–3 歲最喜歡「做真的事」，而且是精細動作與序列能力的練習。</li>
+        <li><b>允許無聊：</b>孩子說「無聊」或在旁邊晃，忍住 5 分鐘不介入，多數會自己找到事做。自主遊戲是執行功能的練習場。</li>
+        <li><b>趕時間的解法在前一晚：</b>衣服、書包、水壺前一晚放門口；早上流程用圖卡貼牆上讓孩子「自己看下一步」，大人少催一半。</li>
+        <li><b>把陪伴分給別人：</b>隔代、保母、親子館、團體課都是合法的「分擔」。孩子接觸不同引導者，本來就是發展的一部分（這正是腳本第③段的重點）。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Tronick 與 Cohn（1989）：親子面對面互動錄影，情緒狀態「同步」的時間約三成；安全依附的關鍵不是同步比例高，而是不同步之後能否快速修復。</li>
+        <li>Milkie、Nomaguchi 與 Denny（2015，Journal of Marriage and Family）：3–11 歲孩子的母親陪伴「總時數」與孩子的行為、情緒、學業結果幾乎無關；有關的是互動的品質與母親本身的壓力程度。</li>
+        <li>Yu 與 Smith（2016，Current Biology）：大人跟著孩子的注意力走（而不是帶領），孩子專注在同一個物件上的時間會延長；大人主導反而縮短孩子的專注。</li>
+        <li>Harvard Center on the Developing Child「serve and return」：孩子發出訊號（看、指、咿呀），大人回應，這種一來一往是腦部連結形成的基本單位，不需要昂貴教具。</li>
+      </ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>兩個孩子都帶過，可以講一段「老二出生後老大怎麼被『分配』到的專屬時間」。真實的取捨比理論更能安慰家長。</p></div>
+    </div>
+  </details>
+
+  <details class="q" id="q8">
+    <summary><span class="n">8</span><span class="t">孩子的專注力、執行功能、自信心，在 0–3 歲可以怎麼培養？<small>「專注力與學習能力」勾選 67%、「自信心」55%。原始提問 5 則。也呼應腳本第①段「與後續專注力、自尊、自信的關聯」。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>3 歲以下的專注力本來就短，1 歲能專注 2、3 分鐘，2 歲 5 分鐘上下，而且是「跳著玩」的。這年紀不用訓練專注，要做的是不打斷：孩子正在看一個東西時，大人不要叫他、不要塞新玩具。執行功能最好的練習場是身體遊戲，像紅綠燈、木頭人、跟著音樂停和走，這也是為什麼律動課對這年紀有意義。自信來自「我做到了」的經驗累積，所以挑戰要剛剛好，稱讚要具體。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>保護而不是訓練專注：</b>孩子正在專心時（即使只是看螞蟻）忍住不講話；等他抬頭看你再回應。</li>
+        <li><b>玩具少、輪替：</b>一次拿出 4 到 6 樣，其餘收起來兩週換一輪。選項太多會讓孩子一直換。</li>
+        <li><b>「停與走」遊戲：</b>音樂響就動、停就定住；「木頭人」；「慢慢走、快快走」。這類遊戲直接練抑制控制，是最有研究支持的學齡前執行功能活動之一。</li>
+        <li><b>兩步驟指令：</b>「去拿鞋子，然後放門口」。做到了就描述出來。</li>
+        <li><b>剛剛好的挑戰：</b>孩子會的事再多一點點。磁力片不想玩，就先讓他把磁力片當車庫停車，再慢慢加「我們蓋一面牆」。</li>
+        <li><b>稱讚過程，不稱讚人：</b>「你試了三次」「你自己想到把它轉過來」而不是「好聰明」。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Ruff 與 Lawson（1990）：1–5 歲自由遊戲中的專注時間隨年齡穩定增加，1 歲孩子專注一個玩具常在 1–3 分鐘。短是常態。</li>
+        <li>Diamond 與 Lee（2011，Science）回顧：有效提升學齡前執行功能的活動包括需要「停下來、記規則、切換」的身體遊戲、音樂律動、假扮遊戲與武術；單純的電腦訓練效果最難遷移。</li>
+        <li>Yu 與 Smith（2016）：大人跟隨孩子注意力時，孩子的持續注意變長。</li>
+        <li>Gunderson 等人（2013）：1–3 歲時父母過程稱讚的比例，預測 7–8 歲成長型思維與挑戰偏好。</li>
+        <li>Campos 等人（2000）「旅行開闊心智」：會自己移動（爬、走）的嬰兒在空間認知、注意力與情緒理解上出現連鎖進步，動作是認知的引擎而不是分開的能力。</li>
+      </ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q9">
+    <summary><span class="n">9</span><span class="t">到底可不可以打？<small>原始提問 1 則，但只有五個字，安安老師很可能挑出來問。是地雷題，需要準備好的措辭。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>我理解會問這題的爸媽，多半是已經累到沒有其他工具了，而且我們這一代很多人是被打大的。研究五十年、十六萬個孩子的資料很一致：打，短期會停，長期和更多攻擊、更差的親子關係、更多情緒問題相關，而且沒有找到任何正向結果。法律上，台灣也正在把民法的「懲戒」兩個字拿掉，改成不得對子女有身心暴力。所以我的回答是：不打。但我更想講的是，打的衝動出現時，大人需要的是什麼。</p></div>
+      <div class="block do"><h4>怎麼接下去講</h4><ol>
+        <li><b>不審判提問者：</b>「會問這題代表你在猶豫，猶豫就是好事。」</li>
+        <li><b>說明為什麼打「看起來有效」：</b>孩子被嚇到會停，大人得到立即回饋，所以會越用越多，但孩子學到的是「生氣的時候可以動手」，1–3 歲正是模仿期。</li>
+        <li><b>給替代工具：</b>①大人先離開 30 秒（孩子安全的前提下），洗把臉；②用身體制止而不是打：抱住、移開、牽走；③用「自然結果」：丟食物就收走食物。</li>
+        <li><b>大人的求助管道：</b>覺得快要失控，可以打 1957 福利諮詢專線，或各縣市親子館、托育資源中心的育兒指導服務，有人會陪你想辦法。這不是丟臉的事。</li>
+        <li><b>最後回到關係：</b>「孩子不需要完美的父母，需要的是會修復的父母。真的失手了，事後跟孩子說『剛剛媽媽太生氣，打你是不對的』，這句話本身就是教養。」</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Gershoff 與 Grogan-Kaylor（2016，Journal of Family Psychology）：整合 75 項研究、超過 16 萬名兒童，「打屁股／打手」與 17 項結果中的 13 項有顯著關聯，全部是負面的（更多攻擊、反社會行為、心理健康問題、親子關係較差、認知表現較低），沒有任何一項正向；而且效果方向與強度和「身體虐待」幾乎相同。</li>
+        <li>美國兒科醫學會（AAP，2018 政策聲明）明確反對任何形式的體罰與言語羞辱。</li>
+        <li>Tremblay（2004）：2–3 歲是身體攻擊的高峰期，孩子正在學「生氣時可以怎麼做」。大人示範什麼，他就學什麼。</li>
+      </ul></div>
+      <div class="block law"><h4>法規</h4><ul>
+        <li>《兒童及少年福利與權益保障法》第 49 條：任何人不得對兒童及少年有身心虐待等行為。</li>
+        <li>《民法》第 1085 條現行文字是「父母得於必要範圍內懲戒其子女」。行政院已於 2024 年通過修正草案送立法院，刪除「懲戒」，改為父母保護教養子女時「不得對子女為身心暴力行為」；截至講座當天請以「修法方向已確定、仍在立法院審議」描述，不要說已三讀。</li>
+        <li>聯合國《兒童權利公約》第 19 條（台灣以施行法國內法化）：締約國應保護兒童免於一切形式的身心暴力。</li>
+        <li>通報與求助：113 保護專線（24 小時）、1957 福利諮詢專線。</li>
+      </ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q10">
+    <summary><span class="n">10</span><span class="t">送托／送保母時哭著被抱走、分離焦慮、超黏某一個人，怎麼建立安全感？<small>原始提問 6 則。「親子依附與安全感」勾選 51%，是腳本第②③段的核心。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>8 個月到 1 歲半是分離焦慮的高峰，會哭代表他已經知道「你是特別的、你離開了」，這是依附建立好的證據，不是建立失敗。安全感不是靠「不分離」累積的，是靠「每次分開都有回來、回來時有好好接住」累積的。送托時那位媽媽做的已經是對的：認真說再見、說什麼時候來接、然後真的走。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>再見儀式固定、簡短、不回頭：</b>同一句話、同一個動作（擊掌、親額頭），30 秒內完成。拖越久孩子越難。偷偷溜走會讓他之後更警戒。</li>
+        <li><b>把「什麼時候回來」講成他懂的語言：</b>「你吃完點心、睡醒、再玩一下，媽媽就來了。」不是「五點」。</li>
+        <li><b>重逢比道別重要：</b>接回來的前 10 分鐘放下手機，蹲下、抱、說「媽媽回來了，我說會來就會來」。這句話累積一百次，就是安全感。</li>
+        <li><b>家裡練小分離：</b>去廁所說「我去廁所，馬上回來」，回來說「我回來了」。躲貓貓也是在練「不見會再出現」。</li>
+        <li><b>留一個過渡物：</b>媽媽的小手帕、有媽媽味道的衣服，讓保母或老師在哭的時候給。</li>
+        <li><b>只黏爸爸／只要媽媽：</b>1–3 歲會有「偏好對象」階段，是依附階層的正常現象，不是拒絕另一方。被拒絕的那一方不要在孩子最脆弱的時刻（睡前、哭鬧中）硬換手，改在心情好的時段多接手一件固定的事（洗澡、讀書）。</li>
+        <li><b>適應期：</b>新環境通常 2 到 4 週，哭的時間逐週縮短就是在進步；若一個月後哭的時間不減反增、吃睡明顯退化，再和托育人員一起調整。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Bowlby 與 Ainsworth 的依附理論：Ainsworth 的「陌生情境」顯示，安全依附的孩子分離時也會哭，差別在重逢時能被安撫、很快回去玩。重逢是觀察重點。</li>
+        <li>Bell 與 Ainsworth（1972，Child Development）：出生頭幾個月媽媽越快回應哭泣，一歲時孩子哭得越少、越會用其他方式溝通。「哭了就抱會寵壞」在一歲以下沒有證據。</li>
+        <li>van IJzendoorn 等人的跨國整合分析：一般樣本約 60–65% 的孩子是安全依附，意思是多數「普通家庭」已經做得夠好。</li>
+        <li>NICHD 大型托育研究（1997 起）：送托本身不影響依附安全；影響的是家庭中母親的敏感回應。送托的媽媽可以放下罪惡感。</li>
+      </ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>腳本第③段「接觸不同引導者與團體環境」可以在這裡接：帶孩子上親子律動課，一開始他只黏你，後來願意跟老師走，這個過程就是安全堡壘的功能。</p></div>
+    </div>
+  </details>
+
+  <details class="q" id="q11">
+    <summary><span class="n">11</span><span class="t">在家可以怎麼陪 0–3 歲孩子玩、做動作遊戲？幾歲適合開始律動課？會不會太早或刺激過度？<small>「如何陪孩子玩」勾選 70%、「動作與身體發展」54%。開場腳本就說有很多 1 歲多家長在問律動課。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>0–3 歲最好的動作教具是地板和大人的身體。原則是：多趴、多爬、多赤腳、多不同地面，少坐推車和餐椅。WHO 建議 1 歲以上每天至少 180 分鐘身體活動，分散在一整天。團體律動課幾歲開始沒有唯一答案，關鍵是孩子能不能在陌生環境裡「用你當基地」：會跑出去探索再跑回來看你，就差不多了。至於刺激過度，看孩子的訊號比看年齡準：移開視線、打哈欠、打嗝、手指張開、突然很黏，就是「夠了」。</p></div>
+      <div class="block do"><h4>可以直接給的分齡遊戲</h4><ol>
+        <li><b>0–6 個月：</b>每天多次短時間趴（tummy time），總計往 30 分鐘累積；大人躺著把寶寶放胸口對看；抓握不同質地的布。</li>
+        <li><b>6–12 個月：</b>坐著伸手拿、側邊取物（練軀幹旋轉）；爬過枕頭山、爬過大人的腿；拍打、敲打、丟進容器（練放開）。10 個月撞頭很常見，與其阻止探索，不如把家具角包起來、留一塊安全區。</li>
+        <li><b>1–2 歲：</b>赤腳走草地、沙、斜坡、階梯；推重物（裝書的箱子）；蹲下撿東西再站起（一天幾十次）；跟音樂停走；大人當山、當隧道。</li>
+        <li><b>2–3 歲：</b>雙腳跳、單腳站一下、踢球、走平衡線（地上貼膠帶）；搬運遊戲、擦桌子、撕紙、黏土、串大珠；假扮遊戲（煮飯、照顧娃娃）。</li>
+        <li><b>英語環境：</b>Kuhl 的研究顯示嬰兒只能從「真人互動」學到新語言的聲音，影片和音檔幾乎無效。爸媽英語不好沒關係，一起唱幾首童謠、讀有圖的英文繪本就是真人互動；2 歲前不建議用影片教英文。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Adolph 等人（2012，Psychological Science）：12–19 個月學步兒每小時平均走 2,368 步、跌倒 17 次，換算一天約 1 萬 4 千步、上百次跌倒。大量練習與大量失敗就是學走路的方法。</li>
+        <li>WHO（2019）：1–4 歲每天至少 180 分鐘各種強度的身體活動；1 歲以下每天多次互動式地板遊戲，清醒時趴著累積至少 30 分鐘；不應連續被束縛（推車、餐椅、背巾）超過 1 小時。</li>
+        <li>Kuhl、Tsao 與 Liu（2003，PNAS）：9 個月美國嬰兒接觸真人說中文 12 次後能分辨中文語音，看同樣內容的影片或聽音檔的組別則完全沒有學到。</li>
+        <li>AAP（2016）媒體指引：18 個月以下除了視訊通話不看螢幕；18–24 個月若要看，選高品質內容且大人一起看；2–5 歲每天不超過 1 小時。</li>
+        <li>Brazelton 新生兒行為評估：嬰兒「過載」訊號包括移開視線、打哈欠、打嗝、噴嚏、膚色改變、手指張開、突然哭。看訊號比看年齡表準。</li>
+      </ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>兩個孩子 3 歲開始上親子律動，可以講「為什麼是 3 歲」：你當時怎麼判斷他準備好了，以及課堂上你觀察到什麼是在家做不到的（團體節奏、模仿同儕、聽指令停與走）。</p></div>
+    </div>
+  </details>
+
+  <details class="q" id="q12">
+    <summary><span class="n">12</span><span class="t">孩子情緒失控，是不是和媽媽自己的情緒管理有關？教養不一致、規則一再被打破，我該怎麼堅持？<small>原始提問 5 則，含「媽媽情緒」「爸媽矛盾」「我們這代沒受過情緒教育」。回答要小心不加重自責。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>30 秒版</h4><p>有關，但方向不是「媽媽情緒差害孩子失控」，而是「大人穩定時孩子比較快回穩」。這表示媽媽照顧自己不是奢侈，是教養的一部分。至於大人之間的不一致，研究說重點不在規則完全一樣，而在兩個大人不在孩子面前互相推翻。先協調出 3 條兩人都守的底線，其他的允許有差異，孩子分得清「跟爸爸可以、跟媽媽不行」，這不會把他搞混。</p></div>
+      <div class="block do"><h4>當下操作步驟</h4><ol>
+        <li><b>媽媽的 90 秒：</b>覺得要爆了，先確認孩子安全，走開 90 秒（到廚房喝水、看窗外）。神經科學上一波情緒的生理反應約 90 秒會消退，之後是你在「續杯」。</li>
+        <li><b>修復比不犯錯重要：</b>吼了，事後蹲下來說「剛剛媽媽太大聲，嚇到你了，對不起」。孩子學到的是情緒可以修復。</li>
+        <li><b>兩個大人的「三條底線」：</b>例如安全、不打人、睡前流程。其餘（吃多少、穿什麼）允許各自不同。</li>
+        <li><b>不在孩子面前推翻對方：</b>當下先順著對方的決定，事後私下談。若對方的做法有安全疑慮，用「我們一起去看看」把孩子帶離，而不是當場否定。</li>
+        <li><b>長輩不一致：</b>把規則寫在冰箱上，用「醫師／治療師說」當第三方背書，比「我說」容易被接受。</li>
+        <li><b>照顧者也需要被照顧：</b>親子館、托育資源中心的育兒指導、媽媽社群、心理諮商都是資源。孩子情緒很大的那段時間，大人的睡眠比任何技巧重要。</li>
+      </ol></div>
+      <div class="block ev"><h4>研究佐證</h4><ul>
+        <li>Waters 等人（2014）：嬰兒會同步媽媽的壓力生理反應。大人先穩，是有實證的。</li>
+        <li>Tronick 的「靜止臉」實驗（1978）與後續：孩子對大人的情緒不可得非常敏感，但短暫的不同步之後若能修復，孩子反而學到「關係會回來」。</li>
+        <li>Feinberg（2003）共親職（coparenting）模型：影響孩子最大的不是父母教養風格是否相同，而是父母彼此是否支持、是否在孩子面前互相拆台。</li>
+        <li>Goodman 等人（2011）整合分析：母親憂鬱與孩子的情緒行為問題有中等程度關聯，但效果是雙向、可改變的；支持母親本身就是對孩子最有效的介入之一。</li>
+        <li>Winnicott（1953）「夠好的母親」：不需要完美，孩子需要的是可預期、會回來的照顧者。</li>
+      </ul></div>
+    </div>
+  </details>
+</section>
+
+<!-- ========== 分主題 ========== -->
+<section id="themes">
+  <h2>分主題回覆：其餘可能出現的提問<small>依主辦的八個分類整理，涵蓋 74 則原始提問中 TOP 12 沒有單獨處理的情境。</small></h2>
+
+  <h3><span class="tag e">情緒</span>情緒表達與安撫（其他情境）</h3>
+
+  <details class="q" id="q13">
+    <summary><span class="n">13</span><span class="t">2 歲孩子突然出手打媽媽的臉、1 歲 3 個月出現揮手打人、丟心愛的東西<small>原始提問 4 則</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>1 到 3 歲的打人多半是「手比嘴快」：太興奮、太生氣、想引起注意，都可能用手。研究顯示 2 到 3 歲是身體攻擊的高峰，之後會自然下降，前提是大人每次都用一樣的方式回應。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>打過來的手輕輕握住（不是甩開），臉平靜，低聲說「手不打人，手可以這樣」，然後把他的手放到你臉上輕輕摸。示範比責備有效。</li>
+        <li>不要笑、不要誇張叫痛、不要「打回去讓他知道痛」。任何大反應都是獎勵。</li>
+        <li>丟東西是 1–2 歲的「軌跡基模」（想看東西飛出去的樣子）。給可以丟的東西（球、襪子球）和可以丟的地方（洗衣籃），說「球可以丟，兔兔要抱」。</li>
+        <li>被阻止時丟心愛的安撫物：那是情緒表達，不是不要它了。等他冷靜後把兔兔撿回來給他，說「你剛剛很生氣，兔兔在這裡」。</li>
+        <li>打人後的「道歉」不用強迫說對不起，改成「做對的事」：拿衛生紙給被打的人、摸摸。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Tremblay 等人（2004，Pediatrics）：身體攻擊在 17 個月普遍出現，約 2–3 歲達高峰後下降；持續不降的少數孩子，和家庭回應方式有關。</li><li>Athey（1990）基模理論：丟、推、滾是「軌跡」基模，是認知探索而非攻擊。</li></ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q14">
+    <summary><span class="n">14</span><span class="t">孩子累過頭不停尖叫、什麼都不要、一言不合往後倒<small>原始提問 3 則</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>「過累」的孩子已經沒有任何調節能力，這時候所有的選擇、問句、道理都是額外負擔。目標只有一個：降低刺激，讓他睡。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>關燈、關電視、關音樂，把人帶到最無聊的房間。</li>
+        <li>不問「你要不要」、不給選擇。直接做睡前流程的最後兩步。</li>
+        <li>往後倒：確保背後有東西接（地墊、床），不要每次都衝過去接，他會學到「往後倒大人就來」。安全環境下讓他倒一次在軟墊上，通常就不會再用這招。</li>
+        <li>隔天把午睡或就寢提早 30 分鐘。過累的孩子要「提早」不是「延後」。</li>
+        <li>反覆發生的話，記錄一週的睡眠與崩潰時間，通常會看到固定時段，從那裡調作息。</li>
+      </ol></div>
+    </div>
+  </details>
+
+  <details class="q" id="q15">
+    <summary><span class="n">15</span><span class="t">心情不好只能大哭、還不會表達，媽媽可以怎麼引導？怎麼讓孩子從動作中釋放情緒？<small>原始提問 4 則（1–2 歲）</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>1 到 2 歲的情緒教育不靠講，靠「大人幫他說」加「身體有出口」。你每天替他命名感受，兩年後他就會自己說；你每天讓他用身體把能量用掉，他就比較不會用尖叫和打人。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li><b>替他配音：</b>「你好生氣，因為積木倒了。」「你好開心，因為爸爸回來了。」一天十次，不用他回應。</li>
+        <li><b>情緒詞只先教四個：</b>開心、生氣、難過、害怕。搭配表情和繪本。</li>
+        <li><b>身體出口：</b>生氣可以跺腳、捶枕頭、推牆壁、撕紙、丟球進籃子。先在心情好的時候玩熟，情緒來的時候才用得出來。</li>
+        <li><b>深壓覺幫助平靜：</b>用力抱緊、被子捲壽司、推重物、吊單槓，都是職能治療常用的「重工作」活動，對很多孩子有鎮定效果。</li>
+        <li><b>大人示範自己的：</b>「媽媽現在有點生氣，我要深呼吸三次。」然後真的做。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Lieberman 等人（2007）：情緒命名降低杏仁核反應。</li><li>Kopp（1982）情緒調節發展模型：3 歲前主要靠外在（大人）調節，之後逐步內化。大人現在做的每一次「代為調節」都是在鋪路。</li><li>WHO（2019）：1–4 歲每天至少 180 分鐘身體活動。活動量不足的孩子，情緒行為問題較多（多項橫斷研究）。</li></ul></div>
+    </div>
+  </details>
+
+  <h3><span class="tag r">規範</span>規範建立與轉移注意力（其他情境）</h3>
+
+  <details class="q" id="q16">
+    <summary><span class="n">16</span><span class="t">3 歲以上：洗澡、刷牙、睡覺一直拖；用鬧鐘才肯離開，怎麼不靠鬧鐘？<small>原始提問 3 則（3 歲以上）</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>3 歲孩子對時間的概念還非常模糊，「再 5 分鐘」對他沒有意義，鬧鐘有效是因為它把時間變成看得見、聽得到的東西，而且不是媽媽在催。這是好工具，不用急著拿掉。要拿掉也是慢慢把「外在提醒」變成「他自己的提醒」。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>鬧鐘繼續用，但改成讓孩子自己設、自己按掉。他從被管的人變成管時間的人。</li>
+        <li>用「事件」代替「時間」：「溜完 3 次」「這首歌唱完」「沙漏流完」。比數字具體。</li>
+        <li>先後句：「先刷牙，然後聽故事。」不是「刷牙才可以聽故事」（那是威脅）。</li>
+        <li>把拖延的事變遊戲：刷牙用 2 分鐘的歌、洗澡用「今天洗誰的腳先」、睡覺用「比賽誰先躺平」。</li>
+        <li>拖延常是「想要多一點你」：睡前流程加 5 分鐘專屬聊天時間，很多拖延會自己消失。</li>
+      </ol></div>
+    </div>
+  </details>
+
+  <details class="q" id="q17">
+    <summary><span class="n">17</span><span class="t">外出不配合、慢吞吞、亂跑、騷擾路人、不開心就噴口水；叛逆唱反調、做危險的事<small>原始提問 2 則（3 歲以上）</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>3、4 歲的「唱反調」是在測試「我跟你是不是不同的人」，這是自我發展的必經階段。危險的事要立刻用身體阻止；其他的「煩人行為」多半是在找反應，你給的反應越小，行為越快消失，同時要給他一個「可以得到反應」的正當管道。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>出門前先「任命」：你是今天的推車長／付錢的人／找門牌的人。有任務的孩子比較不亂跑。</li>
+        <li>噴口水、發怪聲：不看、不罵、轉身。等他停了 3 秒再轉回來跟他說話。回家後在心情好時教「噴口水的話去浴室噴」。</li>
+        <li>危險的事：一步到位，抱走，說一句「危險，我帶你走」，不討論。</li>
+        <li>唱反調：給可以反對的空間。「你想走左邊還是右邊？」「你要先穿鞋還是先拿包包？」他會覺得自己有贏到，大事就比較願意配合。</li>
+        <li>慢吞吞：多半是大人的時間表，不是孩子的問題。出門時間往前抓 15 分鐘，孩子的「慢」就不再是問題。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Erikson 心理社會發展：1–3 歲是「自主 vs. 羞愧」，3–6 歲是「主動 vs. 罪惡感」。反抗是在長自主感，不是在長壞習慣。</li><li>行為學上的「消弱」（extinction）：找反應的行為在失去反應後會先變本加厲（消弱爆發）再消失，撐過前幾天是關鍵。</li></ul></div>
+    </div>
+  </details>
+
+  <h3><span class="tag p">遊戲</span>探索遊戲與學習能力（其他情境）</h3>
+
+  <details class="q" id="q18">
+    <summary><span class="n">18</span><span class="t">孩子只玩車子，磁力片、積木一下就放棄；該鼓勵多嘗試還是尊重喜好？內向謹慎的孩子怎麼敢嘗試？遇到挫折就放棄<small>原始提問 5 則（1–3 歲以上）。「自信心」勾選 55%。</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>兩個都要，比例大約是八成跟著興趣、兩成大人搭橋。孩子的興趣是學習的引擎，不要拿掉；大人的工作是把新東西「掛」在他的興趣上，讓他不知不覺跨過去。至於謹慎的孩子，研究說大約每五個就有一個天生對新事物比較慢熱，這不是缺點，是氣質。對他們最有效的不是推，是「大人先玩給他看、不邀請」。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li><b>興趣搭橋：</b>愛車子就用磁力片蓋停車場、用積木蓋隧道。新玩具當「配角」出場。</li>
+        <li><b>剛剛好的挑戰：</b>他會疊 3 塊，你的目標是 4 塊，不是 10 塊。成功率抓七成左右最能維持動機。</li>
+        <li><b>大人先玩、不邀請：</b>坐在旁邊自己玩新玩具，自言自語「哇，吸住了」。慢熱的孩子通常 5–10 分鐘後會自己湊過來。</li>
+        <li><b>放棄的時候不救援太快：</b>先等 10 秒，再問「你想要我幫哪一步？」只幫那一步。</li>
+        <li><b>稱讚過程、描述失敗：</b>「倒了，你再疊一次。」語氣平淡像在報新聞。失敗不被放大，孩子就不怕。</li>
+        <li><b>大人示範失敗：</b>自己疊倒了說「哎呀，倒了，再來」。孩子學會的是「倒了很正常」。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Kagan 的行為抑制研究：約 15–20% 的嬰兒對陌生刺激有明顯抑制反應（慢熱），是穩定的氣質特徵，但在支持性環境下多數不會發展成焦慮。</li><li>Vygotsky 近側發展區（ZPD）與 Wood、Bruner、Ross（1976）的鷹架概念：學習發生在「自己做不到、有人幫一點就做得到」的區間。</li><li>Gunderson 等人（2013）：1–3 歲的過程稱讚預測日後成長型思維。</li><li>Dweck 的研究顯示稱讚「聰明」會讓孩子日後迴避挑戰，稱讚「努力與策略」則相反。</li></ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q19">
+    <summary><span class="n">19</span><span class="t">10 個月好奇心強、力氣大、暴衝、常撞頭、累了用力抓耳朵揉眼睛，怎麼讓他探索又不受傷？<small>原始提問 1 則，但很具體，0–1 歲家長會有共鳴</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>10 個月正是從「會移動」到「到處移動」的爆發期，撞頭是這個月齡的日常。學走路的孩子一小時跌 17 次，大人不可能也不需要全部接住。做法是把環境弄安全，然後放手讓他撞一些小的。抓耳朵、揉眼睛在累的時候出現，是自我安撫，但抓到破皮就是訊號：他的「想睡」比你以為的早。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>地墊鋪滿活動區、桌角包起來、茶几暫時移走。安全區內大人可以不出手。</li>
+        <li>撞到了，大人的反應決定他哭多久：先停 2 秒看他，他看你，你平靜說「碰到了，沒事」。大人先尖叫，孩子一定哭。</li>
+        <li>力氣大、不會控制力道：多給「重工作」，推紙箱、拉毯子、抱大球，讓他有地方用力。</li>
+        <li>抓耳朵揉眼睛：把小睡提早 20–30 分鐘，看頻率有沒有降。指甲剪短、戴薄手套睡覺。若伴隨發燒、拉扯單側耳朵且哭鬧，看兒科排除中耳炎。</li>
+        <li>托嬰中心一個月內常撞頭：和老師聊環境配置（是否有足夠的安全爬行空間），不一定是孩子的問題。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Adolph 等人（2012）：學步兒每小時跌 17 次，絕大多數不受傷；跌倒是學習動作控制的必要經驗。</li><li>社會參照（social referencing）研究（Sorce 等人，1985 視覺懸崖實驗）：1 歲嬰兒遇到不確定情境會看大人的表情決定要不要哭、要不要前進。</li></ul></div>
+    </div>
+  </details>
+
+  <h3><span class="tag d">發展</span>發展觀察與語言溝通（其他情境）</h3>
+
+  <details class="q" id="q20">
+    <summary><span class="n">20</span><span class="t">怎麼判斷語言與認知是否正常？小學前應該著重什麼，幫助選幼稚園？<small>原始提問 2 則（2–3 歲）</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>2 到 3 歲看三件事：會不會用兩個字以上組句子、聽不聽得懂兩步驟指令、會不會假扮遊戲（餵娃娃、假裝講電話）。這三樣有，認知和語言大方向就沒問題。小學前最該長的不是認字、數數，是「自己穿脫、自己吃、等待輪流、聽完指令、跟人玩得起來」。選幼兒園看的是孩子有沒有時間自由遊戲、老師怎麼回應哭的孩子，而不是教了多少東西。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>2 歲里程碑快檢：50 個以上的字、兩字句（「媽媽抱」）、會指身體部位、會模仿家事、會假扮。</li>
+        <li>3 歲里程碑快檢：三字句、陌生人聽得懂一半以上、會問「為什麼」、能輪流、會說自己名字。</li>
+        <li>參觀幼兒園時看三樣：孩子在哭時老師的反應、戶外活動時間有多長、教室裡有沒有孩子自己做的東西（而非老師做的範本）。</li>
+        <li>教育部「全國教保資訊網」可查立案資料、評鑑結果與收費。</li>
+        <li>有疑慮：兒童發展篩檢（免費 6 次）→ 聯合評估中心。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Diamond（2013）：學齡前執行功能（自我控制、工作記憶、彈性）對學業成就的預測力高於智商與早期識字。</li><li>Hirsh-Pasek 與 Golinkoff 等人的「引導式遊戲」（guided play）研究：在遊戲中由大人輕度引導，學習效果優於直接教學，也優於完全放任。</li><li>CDC 2022 年修訂的發展里程碑：以「75% 孩子做得到」的年齡為基準，更保守，目的在減少「再等等看」。</li></ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q21">
+    <summary><span class="n">21</span><span class="t">男孩、女孩的發展真的不一樣嗎？<small>腳本第②段列為對談主題，QA 可能延伸</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>平均上有差，但差距很小，而且「同性別之間的差異」遠大於「男女之間的差異」。女孩平均語言略早、自我控制略好；男孩平均活動量較大、空間動作探索多。這些差異部分來自天生，部分來自大人對男孩女孩的期待不同。實用的結論是：看眼前這個孩子，不要用性別預測他。</p></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Hyde（2005，American Psychologist）「性別相似假說」：整合 46 項後設分析，78% 的心理變項男女差異是零或極小。</li><li>Else-Quest 等人（2006）氣質後設分析：女孩在「努力控制」（effortful control）上平均高、男孩在「活動量」與「高強度愉悅」上平均高，效果量中等，但分布大幅重疊。</li><li>Eliot《粉紅腦、藍色腦》整理：許多幼年性別差異在大人差別對待下被放大，而非單純天生。</li></ul></div>
+      <div class="block me"><h4>個人經驗提示</h4><p>如果兩個孩子一男一女或同性別但個性差很多，這是最好的例子：同一對父母、同一個律動班，孩子的發展路徑仍然完全不同。</p></div>
+    </div>
+  </details>
+
+  <h3><span class="tag f">家長</span>家長負荷與教養協調（其他情境）</h3>
+
+  <details class="q" id="q22">
+    <summary><span class="n">22</span><span class="t">我是內向的人，不知道怎麼跟還不會說話的寶寶聊天；跟寶寶說話有什麼地雷？<small>原始提問 1 則，但很可愛，安安老師可能會選</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>好消息是寶寶不需要話題，他需要的是「回應」。他看哪裡你就說哪裡，他發什麼音你就學回去，這叫「實況轉播」，內向的人反而做得好，因為不用想梗。研究說一來一往的「回合數」比字數重要。地雷只有一個：把寶寶當聽眾單向講，或邊滑手機邊「嗯嗯」。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li><b>自我轉播：</b>「媽媽在洗碗，水好涼。」做什麼說什麼。</li>
+        <li><b>幫他轉播：</b>「你在看燈，燈亮亮的。」他看什麼說什麼。</li>
+        <li><b>模仿回去：</b>他說「啊咕」，你也說「啊咕」，然後等。他會再說，這就是對話。</li>
+        <li><b>讀書代替聊天：</b>從出生開始每天讀同一本書 5 分鐘，不用聊天技巧。</li>
+        <li><b>地雷：</b>一直考他（「這什麼？說說看」）、糾正發音（他說「狗狗」你說「不對，是『小狗』」）、用高八度一直逗卻不等他回應。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Romeo 等人（2018）：4–6 歲孩子與大人的「對話回合數」預測布洛卡區活化與語言能力，且效果獨立於家庭收入與聽到的總字數。</li><li>AAP（2014）政策：建議從出生開始每天朗讀。</li><li>Harvard「serve and return」：回應孩子發出的訊號是建構腦部連結最基本的互動。</li></ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q23">
+    <summary><span class="n">23</span><span class="t">放學後孩子對媽媽特別情緒化、很兇、沒禮貌，怎麼引導？<small>原始提問 1 則（2–3 歲）</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>這個現象有個名字叫「放學後崩潰」（after-school restraint collapse）。孩子在學校撐了一整天的規矩，看到最安全的人就把蓋子打開。對媽媽最兇，是因為他最確定你不會走。所以先別急著教禮貌，先當他的回收站 20 分鐘。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>接到孩子的前 20 分鐘：不問「今天好嗎」、不講規矩，給點心、給抱、給安靜。</li>
+        <li>回家路上放電：公園繞一圈再回家，身體先動，情緒就出得去。</li>
+        <li>禮貌在心情好的時候教，用扮演遊戲（娃娃沒禮貌怎麼辦）。</li>
+        <li>他兇你時，一句就好：「你今天很累，我在。」不接球，也不討論態度。</li>
+        <li>長期：和老師確認學校的午睡與活動量，過累是放學崩潰最常見的原因。</li>
+      </ol></div>
+    </div>
+  </details>
+
+  <h3><span class="tag s">睡眠</span>睡眠與作息（其他情境）</h3>
+
+  <details class="q" id="q24">
+    <summary><span class="n">24</span><span class="t">1 歲多明明很累又不甘願午睡<small>原始提問 1 則</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>1 到 1 歲半正好在從兩次小睡變成一次的過渡期，會出現「上午不睡、下午太晚睡、晚上又睡不著」的混亂，通常持續幾週。「不甘願」通常是錯過了睡意的窗口，變成過累亢奮。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>記錄三天的「疲累訊號」（揉眼、抓耳、發呆、變黏、變兇）出現時間，下次在訊號前 15 分鐘就開始午睡流程。</li>
+        <li>午睡流程縮小版：拉窗簾、同一首歌、同一條被子。</li>
+        <li>午睡前 30 分鐘不要太刺激，但也不能一直坐推車；上午安排戶外活動，午睡會比較順。</li>
+        <li>過渡期可以「一天一次、一天兩次」交替，不用急著定型。</li>
+      </ol></div>
+    </div>
+  </details>
+
+  <h3><span class="tag a">依附</span>依附安全感與分離（其他情境）</h3>
+
+  <details class="q" id="q25">
+    <summary><span class="n">25</span><span class="t">3 個月寶寶，托兒所老師說不要一直抱，放下就哭，哭久會不會影響依附？<small>原始提問 1 則，敏感：牽涉托育人員的建議，回答要不否定老師</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>3 個月的寶寶抱不會寵壞，這一點研究很一致：頭幾個月回應越快，一歲時哭得越少。老師的話有一半是對的，寶寶需要「清醒時躺著玩」的時間來練動作，但那是在他狀態好的時候放，不是在他哭的時候放。所以答案是：哭了就抱，沒哭的時候多放。兩件事不衝突。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>剛吃飽、剛睡醒、心情好的 10 分鐘，放下來趴著或躺著玩，大人在旁邊趴著跟他對看。這就是老師要的「放得下」。</li>
+        <li>哭了先等 10–20 秒看他會不會自己停（不是幾分鐘），沒停就抱。</li>
+        <li>抱的方式可以變化：背巾、側抱、趴在大人胸口，讓他在被抱的同時也在練脖子和軀幹。</li>
+        <li>和老師的溝通：「醫師／治療師說這個月齡哭了回應沒問題，我們在家會多練清醒時趴著。」用第三方背書化解對立。</li>
+        <li>哭泣高峰在 6 週左右，3 到 4 個月後會明顯下降，這段撐過去就好。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Bell 與 Ainsworth（1972）：頭三個月母親對哭泣回應越及時，一歲時嬰兒哭的頻率與時間越少，且更會用聲音與手勢溝通。</li><li>Barr 的「PURPLE 哭泣期」：正常嬰兒哭泣在 6–8 週達高峰、3–4 個月下降，與照顧好壞無關。</li><li>AAP 與多數兒科指引：6 個月以下嬰兒不存在「寵壞」。</li></ul></div>
+    </div>
+  </details>
+
+  <details class="q" id="q26">
+    <summary><span class="n">26</span><span class="t">孩子害怕的時候（吸鼻子、餵藥）怎麼陪？<small>原始提問 1 則（0–1 歲）</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>嬰幼兒面對必要的不舒服程序，最有幫助的是三件事：可預期、大人穩定、結束後有安慰。不需要騙他「不會痛」，也不用長篇解釋。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>固定的「預告句」：「要吸鼻子了，一、二、三。」每次都一樣，他會知道有開始有結束。</li>
+        <li>「安撫姿勢」：讓孩子坐在大人腿上面對外，大人一手環住他的手臂，另一手固定頭，這比平躺壓制讓孩子少很多恐懼（兒童醫療輔導常用的 comfort positioning）。</li>
+        <li>做的時候大人哼同一首歌，速度放慢，孩子會跟著你的呼吸。</li>
+        <li>結束後立刻抱、立刻說「結束了，你撐過去了」。不要「你看沒什麼嘛」。</li>
+        <li>1 歲以上可以用娃娃演練：幫娃娃吸鼻子、餵藥，讓他當醫生。</li>
+      </ol></div>
+    </div>
+  </details>
+
+  <h3><span class="tag h">手足</span>手足與同儕互動</h3>
+
+  <details class="q" id="q27">
+    <summary><span class="n">27</span><span class="t">家裡有新生兒，大寶對妹妹喝奶反應很大、賴皮、說「走開」；手足怎麼互動？同儕模仿不好的行為怎麼校正？<small>原始提問 4 則</small></span><span class="chev">▾</span></summary>
+    <div class="body">
+      <div class="block say"><h4>回答</h4><p>老二出生後老大退化、黏人、說狠話，是幾乎每個家庭都會經過的階段，通常持續幾個月。他不是討厭妹妹，是在確認「我還在不在」。最有效的方法是把老大變成「幫手」而不是「旁觀者」，以及每天給他一段只屬於他的時間。同儕模仿方面，1 到 3 歲模仿是學習的主要方式，好的壞的都會學，大人只需要讓「好的」更常被看見、被回應。</p></div>
+      <div class="block do"><h4>操作</h4><ol>
+        <li>餵奶時間變成老大的時間：餵奶時讀書給老大聽、讓他挑故事。他會把餵奶和「媽媽陪我」連在一起。</li>
+        <li>給任務：拿尿布、唱歌給妹妹聽、選妹妹今天穿什麼。做到就說「妹妹好喜歡你唱歌」。</li>
+        <li>每天 10 分鐘「只有你」：妹妹交給別人，老大決定玩什麼。</li>
+        <li>他說「走開」「不要媽媽」：翻譯回去「你希望媽媽現在只陪你」，不糾正用詞。</li>
+        <li>同儕模仿：不要說「不要學 XX」（那會加深印象），改成描述你想看到的，並在他做到時立刻回應。</li>
+        <li>手足衝突：3 歲以下先分開、先顧安全，不當裁判、不問「誰先的」。</li>
+      </ol></div>
+      <div class="block ev"><h4>佐證</h4><ul><li>Dunn 與 Kendrick（1982）劍橋手足研究：老二出生後，老大的退化與對立行為普遍；母親若與老大「一起談論」嬰兒的需要與感受（「你看妹妹在哭，她想說什麼？」），手足關係長期較好。</li><li>Meltzoff 的模仿研究：嬰幼兒從出生就會模仿，14 個月的孩子會延宕模仿一週前看過的動作。模仿不是問題，是學習的管道。</li></ul></div>
+    </div>
+  </details>
+</section>
+
+<!-- ========== RAW ========== -->
+<section id="raw">
+  <h2>74 則原始提問對照<small>可依年齡、分類篩選或搜尋。每則標示建議接到哪一題回答。</small></h2>
+  <input class="search" id="search" type="search" placeholder="搜尋關鍵字，例如：尖叫、睡、保母、打">
+  <div class="filters" id="ageF">
+    <button class="on" data-v="">全部年齡</button>
+    <button data-v="0">0–未滿 1 歲</button>
+    <button data-v="1">1–未滿 2 歲</button>
+    <button data-v="2">2–未滿 3 歲</button>
+    <button data-v="3">3 歲以上</button>
+  </div>
+  <div class="filters" id="catF">
+    <button class="on" data-v="">全部分類</button>
+    <button data-v="e">情緒</button>
+    <button data-v="r">規範</button>
+    <button data-v="p">遊戲學習</button>
+    <button data-v="d">發展語言</button>
+    <button data-v="f">家長負荷</button>
+    <button data-v="s">睡眠</button>
+    <button data-v="a">依附分離</button>
+    <button data-v="h">手足同儕</button>
+  </div>
+  <p class="count" id="count"></p>
+  <div id="rawList"></div>
+</section>
+
+<!-- ========== 法規與資源 ========== -->
+<section id="law">
+  <h2>法規與資源速查<small>講座中可以直接說出口的管道。數字以 2026 年 11 月查得的官方公告為準，標注年份。</small></h2>
+  <table>
+    <thead><tr><th style="width:32%">項目</th><th>重點</th><th style="width:22%">適用提問</th></tr></thead>
+    <tbody>
+      <tr><td><b>兒童發展篩檢</b>（衛福部國健署）</td><td>113 年 7 月 1 日起，具健保身分未滿 7 歲兒童有 6 次補助篩檢：6–10 個月、10 個月–1 歲半、1 歲半–2 歲、2–3 歲、3–5 歲、5–7 歲各一次。帶健保卡與兒童健康手冊，可和預防保健同時做。院所查「兒童醫療健康資訊整合平台 → 兒童就醫地圖」。國健署 114 年調查過半家長不知道。</td><td>發展正常嗎、不說話、踮腳、選幼兒園</td></tr>
+      <tr><td><b>兒童預防保健</b></td><td>7 次公費：出生–2 個月、2–4 個月、4–10 個月、10 個月–1 歲半、1 歲半–2 歲、2–3 歲、3–7 歲。手冊內有家長填寫的發展檢核表。</td><td>各階段怎麼幫助寶寶</td></tr>
+      <tr><td><b>兒童發展聯合評估中心</b></td><td>各縣市至少 1 家，2023 年全國補助 75 家；醫師與職能、物理、語言、心理、社工團隊聯合評估。另有各縣市「發展遲緩兒童通報轉介中心」協助轉介與早療資源。</td><td>評估管道</td></tr>
+      <tr><td><b>幼兒專責醫師制度</b></td><td>0–3 歲幼兒可在合作兒科登錄固定醫師，追蹤發展與照護問題。</td><td>有疑問找誰</td></tr>
+      <tr><td><b>親子館／托育資源中心、育兒指導</b></td><td>各縣市公共托育家庭服務中心提供免費親子活動、玩具借用、育兒諮詢，多數縣市另有到宅育兒指導服務（0–6 歲）。</td><td>家長負荷、不知道怎麼陪玩</td></tr>
+      <tr><td><b>兒童及少年福利與權益保障法 §49</b></td><td>任何人不得對兒童及少年施以身心虐待等行為。</td><td>可不可以打</td></tr>
+      <tr><td><b>民法 §1085 修正</b></td><td>現行：「父母得於必要範圍內懲戒其子女」。行政院 2024 年通過修正草案送立法院：刪除懲戒，改為「不得對子女為身心暴力行為」。講座當天請用「修法方向確定、審議中」描述。</td><td>可不可以打</td></tr>
+      <tr><td><b>兒童權利公約 §19</b>（施行法）</td><td>保護兒童免於一切形式身心暴力。</td><td>可不可以打</td></tr>
+      <tr><td><b>求助專線</b></td><td>113 保護專線（24 小時）、1957 福利諮詢專線、1925 安心專線（心理）。</td><td>大人快撐不住</td></tr>
+      <tr><td><b>WHO 5 歲以下 24 小時指引</b>（2019）</td><td>1 歲以下：多次地板互動、趴著累積 30 分鐘、不看螢幕、睡 12–16 小時（4–11 個月）。1–2 歲：活動 180 分鐘以上、睡 11–14 小時、2 歲以下不建議螢幕。3–4 歲：活動 180 分鐘（含 60 分鐘中高強度）、睡 10–13 小時、螢幕 1 小時以內。連續束縛不超過 1 小時。</td><td>睡眠、活動量、3C</td></tr>
+      <tr><td><b>AAP 媒體指引</b>（2016）</td><td>18 個月以下除視訊外不看螢幕；18–24 個月選高品質內容且共看；2–5 歲每天不超過 1 小時。</td><td>英語影片、3C</td></tr>
+      <tr><td><b>教育部全國教保資訊網</b></td><td>查幼兒園立案、評鑑、收費與招生。</td><td>選幼兒園</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ========== 研究 ========== -->
+<section id="refs">
+  <h2>研究清單<small>依字母排序，供口頭引用時對照。口頭引用建議只講「作者或機構 + 年份 + 一句結論」。</small></h2>
+  <div class="card" style="font-size:14.5px">
+    <ul style="columns:1;padding-left:20px;margin:0">
+      <li>Adolph, K. E., et al. (2012). How do you learn to walk? Thousands of steps and dozens of falls per day. <i>Psychological Science</i>, 23(11), 1387–1394.</li>
+      <li>American Academy of Pediatrics (2014). Literacy promotion: An essential component of primary care pediatric practice. <i>Pediatrics</i>, 134(2).</li>
+      <li>American Academy of Pediatrics (2016). Media and young minds. <i>Pediatrics</i>, 138(5).</li>
+      <li>American Academy of Pediatrics (2018). Effective discipline to raise healthy children. <i>Pediatrics</i>, 142(6).</li>
+      <li>Bell, S. M., &amp; Ainsworth, M. D. S. (1972). Infant crying and maternal responsiveness. <i>Child Development</i>, 43(4), 1171–1190.</li>
+      <li>Campos, J. J., et al. (2000). Travel broadens the mind. <i>Infancy</i>, 1(2), 149–219.</li>
+      <li>Diamond, A. (2013). Executive functions. <i>Annual Review of Psychology</i>, 64, 135–168.</li>
+      <li>Diamond, A., &amp; Lee, K. (2011). Interventions shown to aid executive function development in children 4 to 12 years old. <i>Science</i>, 333(6045), 959–964.</li>
+      <li>Dunn, J., &amp; Kendrick, C. (1982). <i>Siblings: Love, envy, and understanding</i>. Harvard University Press.</li>
+      <li>Else-Quest, N. M., et al. (2006). Gender differences in temperament: A meta-analysis. <i>Psychological Bulletin</i>, 132(1), 33–72.</li>
+      <li>Engström, P., &amp; Tedroff, K. (2012). The prevalence and course of idiopathic toe-walking in 5-year-old children. <i>Pediatrics</i>, 130(2), 279–284.</li>
+      <li>Feinberg, M. E. (2003). The internal structure and ecological context of coparenting. <i>Parenting: Science and Practice</i>, 3(2), 95–131.</li>
+      <li>Gershoff, E. T., &amp; Grogan-Kaylor, A. (2016). Spanking and child outcomes: Old controversies and new meta-analyses. <i>Journal of Family Psychology</i>, 30(4), 453–469.</li>
+      <li>Goodwyn, S. W., Acredolo, L. P., &amp; Brown, C. A. (2000). Impact of symbolic gesturing on early language development. <i>Journal of Nonverbal Behavior</i>, 24, 81–103.</li>
+      <li>Gradisar, M., et al. (2016). Behavioral interventions for infant sleep problems: A randomized controlled trial. <i>Pediatrics</i>, 137(6).</li>
+      <li>Green, J. A., Whitney, P. G., &amp; Potegal, M. (2011). Screaming, yelling, whining, and crying: Categorical and intensity differences in vocal expressions of anger and sadness in children's tantrums. <i>Emotion</i>, 11(5), 1124–1133.</li>
+      <li>Gunderson, E. A., et al. (2013). Parent praise to 1- to 3-year-olds predicts children's motivational frameworks 5 years later. <i>Child Development</i>, 84(5), 1526–1541.</li>
+      <li>Hyde, J. S. (2005). The gender similarities hypothesis. <i>American Psychologist</i>, 60(6), 581–592.</li>
+      <li>Kagan, J. (1997). Temperament and the reactions to unfamiliarity. <i>Child Development</i>, 68(1), 139–143.</li>
+      <li>Kopp, C. B. (1982). Antecedents of self-regulation: A developmental perspective. <i>Developmental Psychology</i>, 18(2), 199–214.</li>
+      <li>Kuhl, P. K., Tsao, F.-M., &amp; Liu, H.-M. (2003). Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning. <i>PNAS</i>, 100(15), 9096–9101.</li>
+      <li>Lieberman, M. D., et al. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. <i>Psychological Science</i>, 18(5), 421–428.</li>
+      <li>Milkie, M. A., Nomaguchi, K. M., &amp; Denny, K. E. (2015). Does the amount of time mothers spend with children or adolescents matter? <i>Journal of Marriage and Family</i>, 77(2), 355–372.</li>
+      <li>Mindell, J. A., et al. (2009). A nightly bedtime routine: Impact on sleep in young children and maternal mood. <i>Sleep</i>, 32(5), 599–606.</li>
+      <li>Mindell, J. A., et al. (2010). Cross-cultural differences in infant and toddler sleep. <i>Sleep Medicine</i>, 11(3), 274–280.</li>
+      <li>Moffitt, T. E., et al. (2011). A gradient of childhood self-control predicts health, wealth, and public safety. <i>PNAS</i>, 108(7), 2693–2698.</li>
+      <li>Potegal, M., Kosorok, M. R., &amp; Davidson, R. J. (2003). Temper tantrums in young children: 2. Tantrum duration and temporal organization. <i>Journal of Developmental &amp; Behavioral Pediatrics</i>, 24(3), 148–154.</li>
+      <li>Rescorla, L. (2011). Late talkers: Do good predictors of outcome exist? <i>Developmental Disabilities Research Reviews</i>, 17(2), 141–150.</li>
+      <li>Romeo, R. R., et al. (2018). Beyond the 30-million-word gap: Children's conversational exposure is associated with language-related brain function. <i>Psychological Science</i>, 29(5), 700–710.</li>
+      <li>Rosanbalm, K. D., &amp; Murray, D. W. (2017). <i>Caregiver co-regulation across development</i>. OPRE Brief 2017-80.</li>
+      <li>Ruff, H. A., &amp; Lawson, K. R. (1990). Development of sustained, focused attention in young children during free play. <i>Developmental Psychology</i>, 26(1), 85–93.</li>
+      <li>Tremblay, R. E., et al. (2004). Physical aggression during early childhood: Trajectories and predictors. <i>Pediatrics</i>, 114(1), e43–e50.</li>
+      <li>Tronick, E. Z., &amp; Cohn, J. F. (1989). Infant–mother face-to-face interaction: Age and gender differences in coordination and the occurrence of miscoordination. <i>Child Development</i>, 60(1), 85–92.</li>
+      <li>Waters, S. F., West, T. V., &amp; Mendes, W. B. (2014). Stress contagion: Physiological covariation between mothers and infants. <i>Psychological Science</i>, 25(4), 934–942.</li>
+      <li>World Health Organization (2019). <i>Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age</i>.</li>
+      <li>Yu, C., &amp; Smith, L. B. (2016). The social origins of sustained attention in one-year-old human infants. <i>Current Biology</i>, 26(9), 1235–1240.</li>
+    </ul>
+  </div>
+  <div class="note r">引用提醒：Potegal 2003 的「中位數 3 分鐘」來自二手整理；Gershoff 2016 的數字與新聞稿一致但未核對原文表格；民法 1085 條修法進度請以講座當天立法院公告為準。</div>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  本頁由鍾孟修 職能治療師（愛迪樂居家職能治療所）為 2026/11/11 雲門教室「0–3 歲發展關鍵期」線上講座準備。資料來源：主辦提供之主持流程腳本 v0.1 與報名家長樣貌分析簡報；研究與法規出處見各題與清單。家長提問內容已去除可識別資訊，僅保留文字與年齡層。
+</div></footer>
+
+<script>
+const RAW=[
+["孩子想玩想動，但大人體力心力已耗盡該如何陪伴？",0,"f",7],
+["在陪伴孩子面對害怕是可以怎麼做（舉凡連吸鼻子、餵藥）等～",0,"a",26],
+["在公共場合難以安撫，不知道孩子怎麼了，或知道也無法滿足孩子時，該怎麼辦",0,"e",3],
+["送到保母家會認真的跟寶寶說再見及什麼時候來接他才離開，但寶寶還是會哭著被保母抱走。不知道平時可以多做一點什麼讓寶寶更有安全感，也可以讓他知道媽媽會來接他",0,"a",10],
+["這個階段應該如何陪孩子做適齡的活動，但不會過度刺激導致他可能不好好睡覺或喝奶！還有想要適度有英語教學，但沒辦法給予英語環境，因為爸媽英語沒這麼好",0,"p",11],
+["想知道要如何與幼兒對話，我本人是個I人，找話題聊天對我不是件容易的事，何況對象還是無法說話的寶寶，然後也想請教跟寶寶說話地雷有什麼呢？",0,"f",22],
+["小朋友目前三個月，剛進托兒所，托兒所老師說平時不要一直抱著小孩，不然小朋友都放不下去，我從小朋友出生就有一直嘗試讓他自己躺著玩或睡，但放下去通常秒哭，頂多5-10分鐘，擔心放著小朋友哭久會影響他的依附關係所以在家還是哭了就抱起來，想請問該怎做會比較好",0,"a",25],
+["小朋友現在好奇心十足且力氣非常大（不知如何控制力道）。累了想睡覺時常用力抓自己的耳朵（有時抓到脫皮/烏青）、戳揉眼睛戳到發紅；四處探索時，有時候看到有興趣的就突然暴衝。在托嬰短短一個月，不論坐著或是站著常常撞到頭。不確定十個多月大的小孩，要如何讓他探索但不傷到自己？",0,"p",19],
+["想知道如何瞭解該階段小孩的發展或是動作是否有問題",0,"d",5],
+["無法完全理解寶寶哭泣與肢體語言，不確定給他的安全感是否足夠",0,"a",10],
+["到底可不可以打",0,"r",9],
+["如何在每個階段的發展上能幫助到寶寶",0,"d",11],
+["明明很累但又不甘願午睡",1,"s",24],
+["怎麼去引導孩子從動作中解放情緒舒壓等…",1,"e",15],
+["不如她的意，就躺在地上哭",1,"e",1],
+["寶寶目前很愛尖叫/高八度的方式發生，導致聲音都有些沙啞！請問怎麼辦",1,"e",4],
+["小孩很堅持自己要的東西或不肯離開一個地方，很難轉移焦點怎麼辦",1,"r",2],
+["小孩情緒崩潰的時候該怎麼讓他冷靜",1,"e",1],
+["當阻止小孩時，小孩會把手中的物品丟在地上（例如：心愛的安撫兔兔、水瓶）",1,"e",13],
+["教養方式發生矛盾衝突的時候，孩子的規則一再的被打破，然後反覆重新建立的過程會自我懷疑自己的堅持是否是對的。",1,"f",12],
+["情緒管理與同儕模仿的校正",1,"h",27],
+["1、走路時很喜歡踮腳尖走路或者走路會故意歪頭走路，跟孩子說過很危險，但依然這麼做。2、帶孩子去親子館或公園玩時很容易分心，沒辦法坐下好好玩一個玩具。3、不符合他要的東西時，大哭外還會摔東西；身體很累但只要帶他離開玩樂的地方就大哭大鬧。4、看見東西都說給他聽，但目前還只是會叫爸爸或發出相似的單字。",1,"d",5],
+["如何引導手足良好互動",1,"h",27],
+["孩子情緒失控無法好好安撫，是否與媽媽的情緒控管有關聯？",1,"f",12],
+["一直黏媽媽，晚上不肯睡",1,"s",6],
+["小孩一言不合就大哭往後倒",1,"e",14],
+["堅持己見的時刻",1,"r",2],
+["小孩總是賴皮或是生氣的時候，對大人說出走開或是生氣不要大人的話；目前有一個新生兒，大寶對於妹妹喝奶、起床後看到妹妹的反應相對來得大。",1,"h",27],
+["一歲三個月這個年紀會出現揮手、打這樣的動作",1,"e",13],
+["心情不好，不順心，只能大哭（還無法表達），這時候媽媽可以怎麼引導？",1,"e",15],
+["孩子在玩磁力片、積木這種比較需要思考和小肌肉力量的玩具時容易放棄，比較喜歡玩自己最喜歡玩的車子，家長應該鼓勵孩子多嘗試還是讓他自由選擇？孩子有時候會想逃避不熟悉的環境、不熟悉的玩具，要怎麼拿捏界線？",1,"p",18],
+["有點分離焦慮",1,"a",10],
+["孩子有情緒怎麼辦？",1,"e",1],
+["情緒容易失控，對於某些東西（可能是危險的）有特別要拿到手的執著。語言發展還沒有很明確，會發出爸、媽的聲音但沒有辦法對應到正確的人物",1,"d",5],
+["小朋友1y7m，大人所說指令都知道，也會去做，但就是不願意開口說話。請問要如何引導",1,"d",5],
+["什麼都想聽聽",1,"p",11],
+["孩子的情緒變化及安撫方式",1,"e",1],
+["情緒來得快，當下很難安撫，想知道如何引導才是比較好",1,"e",1],
+["孩子被行爲約束時產生反抗情緒甚至肢體動作時該怎麼辦？",2,"r",2],
+["對於兩歲的孩子如何溫和理性的建立規矩",2,"r",2],
+["小朋友突然出手打媽媽的臉或是媽媽的臉頰",2,"e",13],
+["遇到不如小孩的意時，都會尖叫躺地大哭，雖然知道是前額葉還在發展的過程，但在溝通過程時還是很有挫折。另外，小孩假日都不愛睡午覺，平日明明想睡都要拖到21:30才要上床，如何讓小孩再更早睡一點？",2,"s",6],
+["2歲半孩子很好動，晚上都還在跳不睡覺，很困擾",2,"s",6],
+["小孩突然很堅持某些事情卡住轉不過來或是不願意配合體操課時突然大聲尖叫",2,"r",2],
+["説不行的事，說完馬上故意做",2,"r",2],
+["寶寶情緒管理的引導，生氣時該如何安撫自己",2,"e",15],
+["執行功能、專注力、培養自信",2,"p",8],
+["孩子還不太會表達，但是開始用尖叫來表達需求，我知道尖叫是孩子腦部衝動的生理表現，但仍然覺得尖叫時自己幾乎無法忍受（耳朵痛、心理煩躁等），即便想要蹲下來抱抱孩子耳朵也會承受不了，面對尖叫的孩子很困難應對，完全順應又覺得困難，拒絕又有尖叫攻擊讓人疲弱",2,"e",4],
+["孩子很堅持某件事時，除了陪伴以外要如何引導",2,"r",2],
+["如何判斷語言與認知發展處於正常還是異常？小學前的孩子在發展上應著重什麼，希望作為選擇幼稚園的輔助判斷",2,"d",20],
+["在外面小孩想買飲料，不買他就崩潰哭，媽媽學到的是要堅定但不暴怒的方式對待，但當下只想快速止住小孩情緒，因為媽媽只有一個人，還有小孩腳踏車，無法直接把小孩帶離開環境，當下還能怎麼做？",2,"e",3],
+["希望可以多了解動作與身體發展，平常可以帶領孩子。",2,"p",11],
+["孩子放學好像大幼班的壓力釋放，孩子遇到媽媽比較情緒化，請問如何引導？讓小孩學習正確的禮貌態度表達。",2,"e",23],
+["孩子累過頭不停尖叫什麼都不要時到底該怎麼做？",2,"e",14],
+["要如何維持正向溝通",2,"f",12],
+["選擇性注意力不集中、情緒調節，人際發展",2,"p",8],
+["小孩很黏爸爸，而且什麼事情都要叫爸爸做，譬如要泡奶要陪睡要換尿布。",2,"a",10],
+["靜不下來",2,"p",8],
+["晚上精神很好，就是不睡！都要搞到晚上11：00多！",2,"s",6],
+["不順意就躺地板",2,"e",1],
+["一整天都在趕孩子，趕著上學，吃飯，睡覺",2,"f",7],
+["分離焦慮與規律規則變換",2,"a",10],
+["情緒來的時候該如何去應對，安撫孩子當下的情緒挫折",3,"e",1],
+["情緒調節與發展",3,"e",15],
+["洗澡不洗澡、刷牙不刷牙、睡覺不睡覺一直拖該怎麼面對",3,"r",16],
+["小朋友外出常常不配合，動作慢慢吞吞，或是一直亂跑、騷擾路人，或不開心就會很兇、亂噴口水（發出噗的聲音）",3,"r",17],
+["叛逆故意跟大人唱反調、做危險的事",3,"r",17],
+["一個內向害羞謹慎的孩子，如何引導提高他受挫的能力而勇於嘗試新事物？",3,"p",18],
+["專注及學習耐力培養",3,"p",8],
+["小朋友非常堅持某件事，但父母當下就是沒有辦法、也沒有時間溝通，該怎麼辦？",3,"r",2],
+["遇到事情有時候會有挫折或是不願意嘗試。不如意就容易放棄或是生氣，不知道要怎麼去讓他知道這很正常，然後可以再嘗試看看",3,"p",18],
+["1.容易拖延戰術，之前是看時間數字到哪裡就要離開，後來會一直加時間或假裝沒聽到，現階段改使用鬧鐘響有用，如何更有效引導不需使用其他方法？2.看到別人玩的新事物，想引導他試試看，但是有些就會選擇放棄，有些如果嘗試有小失敗就中斷說不要了",3,"r",16],
+["情緒管理和情緒調解（因為我們生長年代並沒有這種教育，因此如今教育下一代賦予挑戰）",3,"f",12],
+["孩子第一時間會大叫大哭來表達她的需求。",3,"e",4]
+];
+const AGE=["0–未滿 1 歲","1–未滿 2 歲","2–未滿 3 歲","3 歲以上"];
+const CAT={e:"情緒",r:"規範",p:"遊戲學習",d:"發展語言",f:"家長負荷",s:"睡眠",a:"依附分離",h:"手足同儕"};
+const TITLE={};
+document.querySelectorAll('details.q').forEach(d=>{TITLE[d.id.slice(1)]=d.querySelector('summary .t').childNodes[0].textContent.trim();});
+let age="",cat="",kw="";
+function render(){
+  const list=document.getElementById('rawList');
+  const rows=RAW.filter(r=>(age===""||String(r[1])===age)&&(cat===""||r[2]===cat)&&(kw===""||r[0].includes(kw)));
+  document.getElementById('count').textContent=`顯示 ${rows.length} / ${RAW.length} 則`;
+  list.innerHTML=rows.map(r=>`<div class="raw"><div class="q"><span class="tag ${r[2]}">${CAT[r[2]]}</span><span class="tag age">${AGE[r[1]]}</span><br>${r[0]}</div><div class="to">接到 → <a href="#q${r[3]}" onclick="document.getElementById('q${r[3]}').open=true">第 ${r[3]} 題</a><br>${(TITLE[r[3]]||'').slice(0,22)}…</div></div>`).join('');
+}
+document.getElementById('ageF').addEventListener('click',e=>{if(e.target.tagName!=='BUTTON')return;age=e.target.dataset.v;[...e.currentTarget.children].forEach(b=>b.classList.toggle('on',b===e.target));render();});
+document.getElementById('catF').addEventListener('click',e=>{if(e.target.tagName!=='BUTTON')return;cat=e.target.dataset.v;[...e.currentTarget.children].forEach(b=>b.classList.toggle('on',b===e.target));render();});
+document.getElementById('search').addEventListener('input',e=>{kw=e.target.value.trim();render();});
+render();
+if(location.hash){const t=document.querySelector(location.hash);if(t&&t.tagName==='DETAILS')t.open=true;}
+</script>
+</body>
+</html>
